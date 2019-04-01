@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import HeaderComponent from './component/HeaderComponent';
 import ArticleComponent from './component/ArticleComponent';
 import SidebarComponent from './component/SidebarComponent';
-import DateComponent from './component/DateComponent';
-
+import FooterComponent from './component/FooterComponent';
 
 let myButtons = ['Home', 'Contact', 'tests'];
 
@@ -14,12 +13,12 @@ ReactDOM.render(
             <header><HeaderComponent/></header>
             <br/>
             {myButtons.map((x) =>
-                <button>{x}</button>
+               <button>{x}</button>
             )}
-            <br/>
+            <br/><br/>
             <article className='col-md-8'><ArticleComponent/></article>
             <sidebar className='col-md-4'><SidebarComponent/></sidebar>
-            <footer><h3><DateComponent/></h3></footer>
+            <footer><FooterComponent/></footer>
 
     </div>
     , document.getElementById('app')
